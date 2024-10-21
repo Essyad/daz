@@ -189,6 +189,7 @@
 }
 
 .group-highlight li {
+  margin-left: 15px;
   margin-bottom: 10px;
   font-size: 16px;
   position: relative;
@@ -817,101 +818,6 @@ ul li {
     background-color: var(--united-nations-blue);
   }
   
-  /* Modal styling */
-  .modal {
-    display: none;
-    position: fixed;
-    z-index: 10;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    backdrop-filter: blur(5px);
-  }
-  
-  .modal-content {
-    background-color: #fff;
-    margin: auto;
-    padding: 30px;
-    width: 70%; /* Increased width for more space */
-    border-radius: 15px;
-    position: relative;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    animation: slideDown 0.4s ease-out;
-    max-width: 1000px; /* Increased max width */
-  }
-  
-  @keyframes slideDown {
-    from {
-      transform: translateY(-50px);
-      opacity: 0;
-    }
-    to {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
-  
-  /* Close button styling */
-  .close {
-    color: #888;
-    font-size: 24px;
-    cursor: pointer;
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    transition: color 0.3s ease;
-  }
-  
-  .close:hover {
-    color: #ff4b5c;
-  }
-  
-  /* Modal title centered */
-  .modal-content h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #e5e5e5;
-    padding-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-    text-align: center; /* Centered title */
-  }
-  
-  /* Modal content paragraph styling */
-  .modal-content p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-  }
-  
-  /* Go Back button styling and positioning */
-  .go-back-btn {
-    position: absolute;
-    top: 20px;
-    left: 20px; /* Positioning at top-left */
-    padding: 10px 20px;
-    background-color: #ff4b5c; /* Eye-catching red */
-    color: #fff;
-    border-radius: 8px;
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-    margin-bottom: 20px; /* Adds space between button and title */
-  }
-  
-  .go-back-btn:hover {
-    background-color: #ff6f7a; /* Lighter shade on hover */
-  }
-  
-  /* Add margin between button and title */
-  .modal-content h2 {
-    margin-top: 60px; /* Space created by button placement */
-  }
-
 /*-----------------------------------*\
  * #Services
 \*-----------------------------------*/
