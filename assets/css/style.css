@@ -1632,3 +1632,15 @@ ul li {
     color: rgb(186, 186, 236);
   }
   }            
+  @media (max-width: 768px) {
+    :root {
+      --fs-1: calc(18px + 2vw);
+      --fs-2: calc(13px + 1.2vw);
+      --fs-3: calc(14px + 0.4vw);
+      --fs-4: 14px;
+      --fs-5: 11px;
+      --fs-6: 12px;
+      --fs-7: 11px;
+      --fs-8: 10px;
+    }
+  }
