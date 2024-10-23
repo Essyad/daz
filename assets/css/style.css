@@ -222,10 +222,13 @@
   --background-color: #F9F9F9;
   --btn-color: #FF5733;
 }
+.bg{
+  background-color: #696b55;
+}
 .containe {
   text-align: center;
   padding: 20px;
-  background-color: var(--cultured); /* Use variable for background */
+   /* Use variable for background */
   position: relative; /* Changed from absolute for better control */
   border-radius: var(--radius-25);
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -347,7 +350,7 @@ ul li {
   }
 }
 @media (min-width: 768px) {
-  .items {
+  .containe {
    display: none;
   }
 }
@@ -586,7 +589,7 @@ ul li {
      /* General Styling */
 .tripe {
   padding: var(--section-padding);
-  background-color: var(--cultured); /* Light background */
+  background-color: #696b55; /* Light background */
   display: flex;
   justify-content: center;
   
@@ -697,13 +700,16 @@ ul li {
 
 .popular {
     padding-block: var(--section-padding);
-    background-color: var(--cultured);
+    background-color: #ca9669;
   }
   
   .popular-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
+  }
+  .tourstext{
+    color: #fff !important;
   }
   
   .popular-card {
