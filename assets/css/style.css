@@ -1630,7 +1630,9 @@ ul li {
   
     }
   
-  
+  a{
+    text-align: center;
+  }
   
     /**
      * REUSED STYLE
