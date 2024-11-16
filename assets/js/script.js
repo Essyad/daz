@@ -52,3 +52,27 @@ function openPopup(tourId) {
   function closePopup(tourId) {
     document.getElementById(tourId).style.display = "none";
   }
+
+  const headers = document.querySelectorAll('.group-subhead');
+
+  // Add click event listeners
+  headers.forEach(header => {
+    header.addEventListener('click', () => {
+      const content = header.nextElementSibling;
+      const isVisible = content.style.display === 'block';
+
+      // Hide all other content
+      document.querySelectorAll('.group-text, .group-highlight').forEach(section => {
+        section.style.display = 'none';
+      });
+
+      // Reset all headers
+      headers.forEach(h => h.classList.remove('active'));
+
+      // Toggle the clicked section
+      if (!isVisible) {
+        content.style.display = 'block';
+        header.classList.add('active');
+      }
+    });
+  });
