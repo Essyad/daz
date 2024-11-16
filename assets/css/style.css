@@ -751,6 +751,7 @@ ul li {
     left: 20px;
     right: 20px;
     background: var(--white);
+    
     border-radius: var(--radius-25);
     padding: 20px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -763,13 +764,13 @@ ul li {
   
   .popular-card .card-title {
     margin-bottom: 10px;
-    font-size: var(--fs-3);
-    font-weight: var(--fw-700);
+    font-size: 11px;
+    font-weight: 600;
     color: var(--yale-blue);
   }
   
   .popular-card .card-text {
-    font-size: var(--fs-4);
+    font-size: 11px;
     color: var(--jet);
     margin-bottom: 15px;
   }
@@ -783,7 +784,7 @@ ul li {
   .card-info .card-icon {
     display: flex;
     align-items: center;
-    font-size: var(--fs-4);
+    font-size: 10px;
     color: var(--jet);
   }
   
@@ -1758,4 +1759,58 @@ h2 {
   color: rgb(108, 100, 100);
   padding: 0 5px;
   border-radius: 5px;
+}
+
+.contact-options {
+  list-style: none;
+  padding: 0;
+}
+.contact-options li {
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.contact-options i {
+  margin-right: 10px;
+  font-size: 20px;
+  color: #007bff;
+}
+.contact-options a {
+  text-decoration: none;
+  color: #333;
+}
+.contact-options a:hover {
+  text-decoration: underline;
+  color: #007bff;
+}
+
+@media screen and (max-width: 768px) {
+  .process-step {
+    max-width: 90%; /* Make the box take up 90% of the screen width on small devices */
+    padding: 15px;
+  }
+
+  .contact-options li {
+    font-size: 14px; /* Reduce the font size for smaller screens */
+  }
+
+  .contact-options i {
+    font-size: 18px; /* Smaller icon size for mobile devices */
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .process-step {
+    max-width: 100%; /* Make the box take up the full screen width on very small screens */
+    padding: 10px;
+  }
+
+  .contact-options li {
+    font-size: 12px; /* Further reduce the font size for very small devices */
+  }
+
+  .contact-options i {
+    font-size: 16px; /* Smaller icon size */
+  }
 }
